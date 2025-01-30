@@ -1,5 +1,5 @@
 # Use an official Python runtime based on Debian Bullseye as a parent image
-FROM python:3.8-slim-bullseye
+FROM python:3.9-slim-bullseye
 
 # Set environment variables to minimize image size and improve performance
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
     libgdk-pixbuf2.0-0 \
     libffi-dev \
     shared-mime-info \
+    ghostscript \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Copy the current directory contents into the container at /usr/src/app
