@@ -2,5 +2,6 @@ fastapi
 uvicorn[standard]
 WeasyPrint>=62,<63
 PyPDF2
+img2pdf
 pikepdf
 python-multipart
