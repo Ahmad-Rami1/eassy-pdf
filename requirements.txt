@@ -3,5 +3,8 @@ uvicorn[standard]
 WeasyPrint>=62,<63
 PyPDF2
 img2pdf
+Pillow
+fpdf  
 pikepdf
+reportlab 
 python-multipart
